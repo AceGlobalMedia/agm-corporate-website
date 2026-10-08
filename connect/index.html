@@ -29,6 +29,10 @@
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{-webkit-text-size-adjust:100%}
+/* taps must always reach the <a>, never stop on an image, icon or label */
+a{-webkit-tap-highlight-color:rgba(191,155,82,.25);touch-action:manipulation}
+a *{pointer-events:none;-webkit-user-drag:none;user-select:none}
+
 body{
   font-family:var(--fb);
   color:var(--navy);
@@ -135,6 +139,7 @@ h2:after{content:"";flex:1;height:1px;background:var(--line)}
   padding:16px;text-decoration:none;
 }
 @media(hover:hover){.bcard:hover{border-color:var(--gold)}}
+.bcard:active{border-color:var(--gold);background:#fffdf8}
 .bcard .mk{
   flex:0 0 78px;height:62px;display:grid;place-items:center;
 }
