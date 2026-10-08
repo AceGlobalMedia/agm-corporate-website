@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Deyon Anteko Pitter</title>
+<meta name="robots" content="noindex,nofollow,noarchive,noimageindex">
+<meta name="googlebot" content="noindex,nofollow">
+<meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="#0f1c38">
+<meta name="description" content="Digital contact card for Deyon Anteko Pitter.">
+<link rel="icon" href="../assets/agm-logo-light.jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#0f1c38;
+  --navy-2:#16244a;
+  --navy-soft:#2a3a63;
+  --gold:#bf9b52;
+  --gold-lt:#d9bd80;
+  --cream:#f7f4ef;
+  --cream-2:#efeae1;
+  --line:rgba(191,155,82,.34);
+  --shadow:0 18px 50px rgba(8,16,34,.16);
+  --fd:'Cormorant Garamond',Georgia,serif;
+  --fb:'Montserrat',system-ui,-apple-system,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{
+  font-family:var(--fb);
+  color:var(--navy);
+  background:var(--navy);
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+  padding:0 0 env(safe-area-inset-bottom);
+}
+img{display:block;max-width:100%}
+a{color:inherit}
+
+.page{max-width:560px;margin:0 auto;background:var(--cream);min-height:100vh;box-shadow:var(--shadow)}
+
+/* ---------- header ---------- */
+.top{
+  background:
+    radial-gradient(120% 90% at 50% 0%, #1b2c54 0%, var(--navy) 62%);
+  color:var(--cream);
+  text-align:center;
+  padding:52px 24px 40px;
+  position:relative;
+}
+.top:after{
+  content:"";position:absolute;left:0;right:0;bottom:0;height:3px;
+  background:linear-gradient(90deg,transparent,var(--gold),var(--gold-lt),var(--gold),transparent);
+}
+.script{
+  font-family:var(--fd);font-style:italic;font-weight:600;
+  font-size:1.5rem;color:var(--gold-lt);letter-spacing:.01em;line-height:1;
+}
+h1{
+  font-family:var(--fd);font-weight:600;
+  font-size:clamp(2.1rem,9vw,2.9rem);
+  line-height:1.08;letter-spacing:.01em;margin:10px 0 0;
+}
+.rule{width:62px;height:1px;background:var(--gold);margin:18px auto 16px;opacity:.85}
+.role{
+  font-size:.66rem;font-weight:600;letter-spacing:.17em;text-transform:uppercase;
+  color:#e6e2d8;line-height:1.9;
+}
+.motto{
+  margin-top:14px;font-size:.6rem;font-weight:600;letter-spacing:.26em;
+  text-transform:uppercase;color:var(--gold-lt);
+}
+
+/* ---------- actions ---------- */
+.actions{padding:26px 18px 6px;display:grid;gap:11px}
+.act{
+  display:flex;align-items:center;gap:15px;
+  background:#fff;border:1px solid var(--line);border-radius:12px;
+  padding:16px 18px;text-decoration:none;
+  box-shadow:0 2px 10px rgba(15,28,56,.05);
+  transition:transform .15s ease,border-color .15s ease,box-shadow .15s ease;
+  min-height:66px;
+}
+.act:active{transform:scale(.985)}
+@media(hover:hover){.act:hover{border-color:var(--gold);box-shadow:0 8px 22px rgba(15,28,56,.1)}}
+.act .ic{
+  flex:0 0 42px;height:42px;border-radius:9px;
+  background:var(--navy);color:var(--gold-lt);
+  display:grid;place-items:center;
+}
+.act .ic svg{width:21px;height:21px;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.act .tx{flex:1;min-width:0}
+.act b{display:block;font-size:.76rem;font-weight:700;letter-spacing:.13em;text-transform:uppercase}
+.act span{display:block;font-size:.8rem;color:#5d6478;font-weight:400;margin-top:2px}
+.act .arw{flex:0 0 auto;color:var(--gold);font-size:1.1rem;line-height:1}
+.act.primary{background:var(--navy);border-color:var(--navy)}
+.act.primary b,.act.primary .arw{color:var(--cream)}
+.act.primary span{color:#b9c2d8}
+.act.primary .ic{background:var(--gold);color:var(--navy)}
+
+/* ---------- sections ---------- */
+section{padding:34px 22px 6px}
+h2{
+  font-family:var(--fb);font-size:.66rem;font-weight:700;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--navy-soft);
+  display:flex;align-items:center;gap:12px;margin-bottom:16px;
+}
+h2:after{content:"";flex:1;height:1px;background:var(--line)}
+
+.rows{display:grid;gap:9px}
+.row{
+  display:flex;align-items:center;gap:14px;
+  background:#fff;border:1px solid rgba(15,28,56,.09);border-radius:10px;
+  padding:13px 16px;text-decoration:none;min-height:58px;
+}
+@media(hover:hover){.row:hover{border-color:var(--gold)}}
+.row .tx{flex:1;min-width:0}
+.row .lbl{display:block;font-size:.63rem;font-weight:700;letter-spacing:.11em;text-transform:uppercase;color:#6a7187;line-height:1.5}
+.row .val{display:block;font-size:.97rem;font-weight:600;word-break:break-word;line-height:1.35;margin-top:1px}
+.row .val.sm{font-size:.84rem;font-weight:500}
+.row .mark{
+  flex:0 0 34px;height:34px;border-radius:50%;
+  background:var(--cream-2);color:var(--navy);display:grid;place-items:center;
+}
+.row .mark svg{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+
+/* ---------- businesses ---------- */
+.biz{display:grid;gap:11px}
+.bcard{
+  display:flex;align-items:center;gap:16px;
+  background:#fff;border:1px solid rgba(15,28,56,.09);border-radius:12px;
+  padding:16px;text-decoration:none;
+}
+@media(hover:hover){.bcard:hover{border-color:var(--gold)}}
+.bcard .mk{
+  flex:0 0 78px;height:62px;display:grid;place-items:center;
+}
+.bcard .mk img{max-height:62px;max-width:78px;width:auto;object-fit:contain}
+.bcard .tx{flex:1;min-width:0}
+.bcard .nm{display:block;font-size:.93rem;font-weight:700;line-height:1.3}
+.bcard .sub{display:block;font-size:.76rem;color:#6a7187;margin-top:4px;word-break:break-word}
+
+/* ---------- footer ---------- */
+footer{
+  margin-top:34px;background:var(--navy);color:#aeb7cf;
+  text-align:center;padding:30px 24px 34px;position:relative;
+}
+footer:before{
+  content:"";position:absolute;left:0;right:0;top:0;height:3px;
+  background:linear-gradient(90deg,transparent,var(--gold),var(--gold-lt),var(--gold),transparent);
+}
+footer .tag{
+  font-family:var(--fd);font-style:italic;font-size:1.12rem;color:var(--cream);line-height:1.5;
+}
+footer .fine{
+  margin-top:16px;font-size:.58rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-lt);
+}
+footer .cr{margin-top:14px;font-size:.68rem;color:#8d97b4}
+
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="top">
+    <p class="script">Let&rsquo;s Connect</p>
+    <h1>Deyon Anteko Pitter</h1>
+    <div class="rule"></div>
+    <p class="role">Founder &nbsp;|&nbsp; Managing Director &nbsp;|&nbsp; Producer</p>
+    <p class="motto">Collaborate &nbsp;&middot;&nbsp; Create &nbsp;&middot;&nbsp; Elevate</p>
+  </header>
+
+  <div class="actions">
+    <a class="act primary" href="../assets/connect/deyon-anteko-pitter.vcf">
+      <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M22 11h-6"/></svg></span>
+      <span class="tx"><b>Save Contact</b><span>Add me to your phone</span></span>
+      <span class="arw" aria-hidden="true">&rsaquo;</span>
+    </a>
+
+    <a class="act" href="https://www.linkedin.com/in/deyon-anteko-pitter-714b4b11/" target="_blank" rel="noopener">
+      <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="3"/><path d="M7 10v7M7 7v.01M11.5 17v-4a2.5 2.5 0 0 1 5 0v4"/></svg></span>
+      <span class="tx"><b>LinkedIn</b><span>Connect with me professionally</span></span>
+      <span class="arw" aria-hidden="true">&rsaquo;</span>
+    </a>
+
+    <a class="act" href="#websites">
+      <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"/></svg></span>
+      <span class="tx"><b>Websites</b><span>Four businesses, one place</span></span>
+      <span class="arw" aria-hidden="true">&rsaquo;</span>
+    </a>
+
+    <a class="act" href="#email">
+      <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="2.5" y="5" width="19" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+      <span class="tx"><b>Email</b><span>Reach the right inbox</span></span>
+      <span class="arw" aria-hidden="true">&rsaquo;</span>
+    </a>
+
+    <a class="act" href="mailto:deyon@aceglobalmedia.com?subject=Meeting%20request%20%E2%80%94%20Deyon%20Anteko%20Pitter&amp;body=Hello%20Deyon%2C%0A%0AI%27d%20like%20to%20set%20up%20a%20time%20to%20talk.%0A%0AWhat%20it%27s%20about%3A%20%0APreferred%20days%20and%20times%3A%20%0ABest%20number%20to%20reach%20me%3A%20%0A%0AThank%20you%2C%0A">
+      <span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span>
+      <span class="tx"><b>Meet</b><span>Request a time with me</span></span>
+      <span class="arw" aria-hidden="true">&rsaquo;</span>
+    </a>
+  </div>
+
+  <section id="call">
+    <h2>Call or text</h2>
+    <div class="rows">
+      <a class="row" href="tel:+12428164222">
+        <span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 3h3.2l1.6 4.2-2 1.4a12 12 0 0 0 5.6 5.6l1.4-2L19 13.8V17a2 2 0 0 1-2.2 2A15.8 15.8 0 0 1 3 5.2 2 2 0 0 1 5 3Z"/></svg></span>
+        <span class="tx"><span class="lbl">ABC Shipping Services</span><span class="val">242-816-4ABC</span></span>
+      </a>
+      <a class="row" href="tel:+12424260837">
+        <span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 3h3.2l1.6 4.2-2 1.4a12 12 0 0 0 5.6 5.6l1.4-2L19 13.8V17a2 2 0 0 1-2.2 2A15.8 15.8 0 0 1 3 5.2 2 2 0 0 1 5 3Z"/></svg></span>
+        <span class="tx"><span class="lbl">LLHS &nbsp;|&nbsp; Ace Global Media</span><span class="val">242-426-0837</span></span>
+      </a>
+      <a class="row" href="tel:+12425656564">
+        <span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 3h3.2l1.6 4.2-2 1.4a12 12 0 0 0 5.6 5.6l1.4-2L19 13.8V17a2 2 0 0 1-2.2 2A15.8 15.8 0 0 1 3 5.2 2 2 0 0 1 5 3Z"/></svg></span>
+        <span class="tx"><span class="lbl">Mobile</span><span class="val">242-565-6564</span></span>
+      </a>
+      <a class="row" href="tel:+19546650880">
+        <span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 3h3.2l1.6 4.2-2 1.4a12 12 0 0 0 5.6 5.6l1.4-2L19 13.8V17a2 2 0 0 1-2.2 2A15.8 15.8 0 0 1 3 5.2 2 2 0 0 1 5 3Z"/></svg></span>
+        <span class="tx"><span class="lbl">United States</span><span class="val">954-665-0880</span></span>
+      </a>
+    </div>
+  </section>
+
+  <section id="email">
+    <h2>Email</h2>
+    <div class="rows">
+      <a class="row" href="mailto:admin@abcshippingservices.com">
+        <span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="2.5" y="5" width="19" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+        <span class="tx"><span class="lbl">ABC Shipping Services</span><span class="val sm">admin@abcshippingservices.com</span></span>
+      </a>
+      <a class="row" href="mailto:admin@llhsbahamas.com">
+        <span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="2.5" y="5" width="19" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+        <span class="tx"><span class="lbl">LLHS &mdash; Luxury Linen &amp; Hospitality Supplies</span><span class="val sm">admin@llhsbahamas.com</span></span>
+      </a>
+      <a class="row" href="mailto:hello@hopesharbour.com">
+        <span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="2.5" y="5" width="19" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+        <span class="tx"><span class="lbl">Hope&rsquo;s Harbour Studios</span><span class="val sm">hello@hopesharbour.com</span></span>
+      </a>
+      <a class="row" href="mailto:deyon@aceglobalmedia.com">
+        <span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="2.5" y="5" width="19" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span>
+        <span class="tx"><span class="lbl">Ace Global Media</span><span class="val sm">deyon@aceglobalmedia.com</span></span>
+      </a>
+    </div>
+  </section>
+
+  <section id="websites">
+    <h2>The businesses</h2>
+    <div class="biz">
+      <a class="bcard" href="https://abcshippingservices.com" target="_blank" rel="noopener">
+        <span class="mk"><img src="../assets/connect/abc-shipping.png" alt="ABC Shipping Services" loading="lazy"></span>
+        <span class="tx"><span class="nm">ABC Shipping Services</span><span class="sub">abcshippingservices.com</span></span>
+      </a>
+      <a class="bcard" href="https://llhsbahamas.com" target="_blank" rel="noopener">
+        <span class="mk"><img src="../assets/connect/llhs.png" alt="LLHS &mdash; Luxury Linen &amp; Hospitality Supplies" loading="lazy"></span>
+        <span class="tx"><span class="nm">LLHS &mdash; Luxury Linen &amp; Hospitality Supplies</span><span class="sub">llhsbahamas.com</span></span>
+      </a>
+      <a class="bcard" href="https://hopesharbour.com" target="_blank" rel="noopener">
+        <span class="mk"><img src="../assets/connect/hopes-harbour.png" alt="Hope&rsquo;s Harbour Studios" loading="lazy"></span>
+        <span class="tx"><span class="nm">Hope&rsquo;s Harbour Studios</span><span class="sub">hopesharbour.com</span></span>
+      </a>
+      <a class="bcard" href="https://aceglobalmedia.com" target="_blank" rel="noopener">
+        <span class="mk"><img src="../assets/agm-logo-light.jpeg" alt="Ace Global Media" loading="lazy"></span>
+        <span class="tx"><span class="nm">Ace Global Media</span><span class="sub">aceglobalmedia.com</span></span>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p class="tag">Building Businesses.<br>Creating Opportunities.<br>Telling Our Stories.</p>
+    <p class="fine">Bahamas Rooted &nbsp;&middot;&nbsp; Globally Minded &nbsp;&middot;&nbsp; Purpose Driven</p>
+    <p class="cr">&copy; 2026 Deyon Anteko Pitter</p>
+  </footer>
+
+</div>
+</body>
+</html>

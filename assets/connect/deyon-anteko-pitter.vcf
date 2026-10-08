@@ -1,0 +1,35 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Pitter;Deyon;Anteko;;
+FN:Deyon Anteko Pitter
+TITLE:Founder | Managing Director | Producer
+ORG:ABC Shipping Services
+item1.TEL;TYPE=WORK,VOICE:+1 242-816-4222
+item1.X-ABLabel:ABC Shipping (242-816-4ABC)
+item2.TEL;TYPE=WORK,VOICE:+1 242-426-0837
+item2.X-ABLabel:LLHS | Ace Global Media
+item3.TEL;TYPE=CELL:+1 242-565-6564
+item3.X-ABLabel:Mobile
+item4.TEL;TYPE=WORK,VOICE:+1 954-665-0880
+item4.X-ABLabel:US
+item5.EMAIL;TYPE=INTERNET,WORK:admin@abcshippingservices.com
+item5.X-ABLabel:ABC Shipping Services
+item6.EMAIL;TYPE=INTERNET,WORK:admin@llhsbahamas.com
+item6.X-ABLabel:LLHS
+item7.EMAIL;TYPE=INTERNET,WORK:hello@hopesharbour.com
+item7.X-ABLabel:Hope's Harbour Studios
+item8.EMAIL;TYPE=INTERNET,WORK:deyon@aceglobalmedia.com
+item8.X-ABLabel:Ace Global Media
+item9.URL:https://www.linkedin.com/in/deyon-anteko-pitter-714b4b11/
+item9.X-ABLabel:LinkedIn
+item10.URL:https://abcshippingservices.com
+item10.X-ABLabel:ABC Shipping Services
+item11.URL:https://llhsbahamas.com
+item11.X-ABLabel:LLHS
+item12.URL:https://hopesharbour.com
+item12.X-ABLabel:Hope's Harbour Studios
+item13.URL:https://aceglobalmedia.com
+item13.X-ABLabel:Ace Global Media
+ADR;TYPE=WORK:;;;Nassau;;;Bahamas
+NOTE:ABC Shipping Services | LLHS - Luxury Linen & Hospitality Supplies | Hope's Harbour Studios | Ace Global Media
+END:VCARD
